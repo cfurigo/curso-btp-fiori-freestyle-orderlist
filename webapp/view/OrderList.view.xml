@@ -1,0 +1,57 @@
+<mvc:View controllerName="orderlist.controller.OrderList"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Button id="btn1" text="Hello World" press="onPress"></Button>
+         <Table id="getData" items="{/ZTRN_C_SalesALP_00}" growing="true">
+            <columns>
+                <Column>
+                    <Text text="Sales Order"></Text>
+                </Column>
+                <Column>
+                    <Text text="Item"></Text>
+                </Column>
+                <Column>
+                    <Text text="Material"></Text>
+                </Column>
+                <Column>
+                    <Text text="Group"></Text>
+                </Column>
+                <Column>
+                    <Text text="Date"></Text>
+                </Column>
+                <Column>
+                    <Text text="Division"></Text>
+                </Column>
+                <Column>
+                    <Text text="Quantity"></Text>
+                </Column>
+                <Column>
+                    <Text text="Unit"></Text>
+                </Column>
+                <Column>
+                    <Text text="Amount"></Text>
+                </Column>
+                <Column>
+                    <Text text="Currency"></Text>
+                </Column>                                                                
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{SalesOrder}"></Text>
+                        <Text text="{SalesOrderItem}"></Text>
+                        <Text text="{Material}"></Text>
+                        <Text text="{MaterialGroup}"></Text>
+                        <Text text="{CreationDate}"></Text>
+                        <Text text="{Division}"></Text>
+                        <Text text="{OrderQuantity}"></Text>
+                        <Text text="{OrderQuanUnit}"></Text>
+                        <Text text="{NetAmount}"></Text>
+                        <Text text="{TransactionCurrency}"></Text>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>
